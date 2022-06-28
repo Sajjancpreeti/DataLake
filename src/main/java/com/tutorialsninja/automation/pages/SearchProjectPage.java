@@ -1,23 +1,21 @@
 package com.tutorialsninja.automation.pages;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.automation.base.Base;
 
-
-
-public class NavigatePage {
+public class SearchProjectPage {
 	
-	public NavigatePage() {
-		
+public SearchProjectPage() {
+	
 		PageFactory.initElements(Base.driver, this);
 		
 	}
 	
-	@FindBy(xpath="//a[@class='navbar-brand mobile']//img[@alt='DIATOZ Logo']")
-	public static WebElement diatozLogo;
+	@FindBy(xpath="//input[@placeholder='🔍 Search by Customer, Project, Folder']")
+	public static WebElement searchTab;
 	
+
 }
