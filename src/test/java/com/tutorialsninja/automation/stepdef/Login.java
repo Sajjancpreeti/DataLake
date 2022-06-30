@@ -16,7 +16,6 @@ public class Login {
 	public void i_launch_the_application() throws InterruptedException{
 		
 		Base.driver.get(Base.reader.getUrl());
-		System.out.println("Launch the application");
 		
 	}
 	

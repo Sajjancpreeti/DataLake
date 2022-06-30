@@ -46,5 +46,20 @@ public class FileFormatPage {
 	
 	@FindBy(xpath = "(//button[@aria-label='Last'])[1]")
 	public static WebElement lastPage;
+	
+	@FindBy(xpath = "//tbody/tr[1]/td[3]/div[1]/a[1]//*[name()='svg']//*[name()='path' and contains(@fill,'currentCol')]")
+	public static WebElement editButton;
+	
+	@FindBy(xpath = "//input[@id='file-format-formatName']")
+	public static WebElement editName;
+	
+	@FindBy(xpath = "//button[@id='save-entity']")
+	public static WebElement saveEdit;
+	
+	@FindBy(xpath = "//tbody/tr[1]/td[3]/div[1]/a[2]//*[name()='svg']//*[name()='path' and contains(@fill,'currentCol')]")
+	public static WebElement deleteFormat;
+	
+	@FindBy(xpath = "//span[normalize-space()='Delete']")
+	public static WebElement deleteFormatConfirm;
 
 }

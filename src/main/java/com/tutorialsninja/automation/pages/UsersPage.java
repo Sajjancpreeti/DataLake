@@ -17,7 +17,7 @@ public class UsersPage {
 	@FindBy(xpath = "//span[normalize-space()='Users']")
 	public static WebElement users;
 	
-	@FindBy(xpath = "//h3[@class='text-secondary font-weight-bolder text-nowrap h2']")
+	@FindBy(xpath = "//a[@id='jh-create-entity']//*[name()='svg']")
 	public static WebElement usersNavSuccess;
 	
 	@FindBy(xpath = "//input[@id='inputSmall']")
@@ -58,4 +58,35 @@ public class UsersPage {
 	
 	@FindBy(xpath = "//button[@aria-label='Last']")
 	public static WebElement lastPage;
+	
+	@FindBy(xpath = "//tr[@id='preetisajjan2@gmail.com']//a[@class='p-0 shadow-none btn btn-white btn-sm']//*[name()='svg']//*[name()='path' and contains(@fill,'currentCol')]")
+	public static WebElement editUserButton;
+	
+	@FindBy(xpath = "//input[@id='last-name']")
+	public static WebElement editLastName;
+	
+	@FindBy(xpath = "//span[normalize-space()='Save']")
+	public static WebElement saveEditUser;
+	
+	@FindBy(xpath = "//tr[@id='peeyusajjan@gmail.com']//button[@type='button']//*[name()='svg']//*[name()='path' and contains(@fill,'currentCol')]")
+	public static WebElement deleteButton;
+	
+	@FindBy(xpath = "//div[@class='btn-danger pointer-onhover']")
+	public static WebElement deleteUserConfirm;
+	
+	@FindBy(xpath = "//tr[@id='preetisajjan2@gmail.com']//span[@class='slider round']")
+	public static WebElement statusUser;
+	
+	@FindBy(xpath = "//tr[@id='preetisajjan2@gmail.com']//div[@class='assignProjectImage mt-2 pointer-onhover']")
+	public static WebElement assignButton;
+	
+	@FindBy(xpath = "//div[@class=' css-qc6sy-singleValue']")
+	public static WebElement projDropDown;
+	
+	@FindBy(xpath = "//tbody/tr[1]/td[1]/input[1]")
+	public static WebElement firstAssignProj;
+	
+	@FindBy(xpath = "//span[normalize-space()='Save']")
+	public static WebElement saveAssign;
+	
 }
