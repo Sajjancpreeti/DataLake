@@ -24,3 +24,44 @@ Feature: Users of the portal
     And I click on Users
     And I click on Sort by User
     And I click on Sort by Email
+    
+    Scenario: Verify adding new external user into the portal
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on Users
+    And I click on Create User
+    And I enter the First name "Peeyu"
+    And I enter the Last name "Sajjan"
+    And I enter the Email "peeyusajjan@gmail.com"
+    And I enter the Organization "Diatoz"
+    And I click on Add User
+    
+    Scenario: Verify adding new internal user into the portal
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on Users
+    And I click on Create User
+    And I select Internal User
+    And I enter Certis User ID "SG000000"
+    And I click on Add User
+    
+    Scenario: Verify navigating to the next page of Users
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on Users
+    And I click on next button of the Users Page
+    
+    Scenario: Verify navigating to the last page of Users
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on Users
+    And I click on last button of the Users Page
+    

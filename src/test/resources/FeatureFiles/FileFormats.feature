@@ -24,3 +24,30 @@ Feature: File Formats of the portl
     And I click on File Formats
     And I click on Sort by Format
     And I click on Sort by Format Type
+    
+    Scenario: Verify add new Format
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on File Formats
+    And I click on Add Format
+    And I enter Format name "GIF"
+    And I enter Format type ".gif"
+    And I click on save
+    
+    Scenario: Verify navigating to the next File Formats Page
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on File Formats
+    And I click on Next to navigate to next page of File Format
+    
+    Scenario: Verify navigating to the last File Formats Page
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on File Formats
+    And I click on last to navigate to last page of File Format

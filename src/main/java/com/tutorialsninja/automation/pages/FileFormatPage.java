@@ -28,5 +28,23 @@ public class FileFormatPage {
 	
 	@FindBy(xpath = "//th[2]//*[name()='svg']//*[name()='path' and contains(@fill,'currentCol')]")
 	public static WebElement sortByFormtType;
+	
+	@FindBy(xpath = "//span[normalize-space()='Add Format']")
+	public static WebElement addFormat;
+	
+	@FindBy(xpath = "//input[@id='file-format-formatName']")
+	public static WebElement formatName;
+	
+	@FindBy(xpath = "//input[@id='file-format-formatExtension']")
+	public static WebElement formatType;
+	
+	@FindBy(xpath = "//button[@id='save-entity']//span[contains(text(),'Add Format')]")
+	public static WebElement saveFormat;
+	
+	@FindBy(xpath = "//button[@aria-label='Next']")
+	public static WebElement nextPage;
+	
+	@FindBy(xpath = "(//button[@aria-label='Last'])[1]")
+	public static WebElement lastPage;
 
 }

@@ -48,5 +48,46 @@ public class FileFormat {
 		Elements.click(FileFormatPage.sortByFormtType);
 		
 	}
+	
+	@Given("^I click on Add Format$")
+	public void i_click_on_Add_Format(){
+		
+		Elements.click(FileFormatPage.addFormat);
+		
+	}
 
+	@Given("^I enter Format name \"([^\"]*)\"$")
+	public void i_enter_Format_name(String arg1){
+		
+		Elements.TypeText(FileFormatPage.formatName, arg1);
+		
+	}
+
+	@Given("^I enter Format type \"([^\"]*)\"$")
+	public void i_enter_Format_type(String arg1){
+		
+		Elements.TypeText(FileFormatPage.formatType, arg1);
+		
+	}
+
+	@Given("^I click on save$")
+	public void i_click_on_save(){
+		
+		Elements.click(FileFormatPage.saveFormat);
+		
+	}
+	
+	@Given("^I click on Next to navigate to next page of File Format$")
+	public void i_click_on_Next_to_navigate_to_next_page_of_File_Format(){
+		
+		Elements.click(FileFormatPage.nextPage);
+		
+	}
+
+	@Given("^I click on last to navigate to last page of File Format$")
+	public void i_click_on_last_to_navigate_to_last_page_of_File_Format(){
+		
+		Elements.click(FileFormatPage.lastPage);
+		
+	}
 }

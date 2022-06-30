@@ -46,5 +46,77 @@ public class Users {
 		Elements.click(UsersPage.sortByEmail);
 		
 	}
+	
+	@Given("^I click on Create User$")
+	public void i_click_on_Create_User(){
+		
+		Elements.click(UsersPage.createUser);
+		
+	}
+
+	@Given("^I enter the First name \"([^\"]*)\"$")
+	public void i_enter_the_First_name(String arg1){
+		
+		Elements.TypeText(UsersPage.firstName, arg1);
+		
+	}
+
+	@Given("^I enter the Last name \"([^\"]*)\"$")
+	public void i_enter_the_Last_name(String arg1){
+		
+		Elements.TypeText(UsersPage.lastName, arg1);
+		
+	}
+
+	@Given("^I enter the Email \"([^\"]*)\"$")
+	public void i_enter_the_Email(String arg1){
+		
+		Elements.TypeText(UsersPage.email, arg1);
+		
+	}
+
+	@Given("^I enter the Organization \"([^\"]*)\"$")
+	public void i_enter_the_Organization(String arg1){
+		
+		Elements.TypeText(UsersPage.organization, arg1);
+		
+	}
+
+	@Given("^I click on Add User$")
+	public void i_click_on_Add_User(){
+		
+		Elements.click(UsersPage.saveUser);
+		
+	}
+	
+	@Given("^I select Internal User$")
+	public void i_select_Internal_User(){
+		
+		Elements.click(UsersPage.selectInternal);
+		
+	}
+
+	@Given("^I enter Certis User ID \"([^\"]*)\"$")
+	public void i_enter_Certis_User_ID(String arg1){
+		
+		Elements.TypeText(UsersPage.certisID, arg1);
+		
+	}
+	
+	@Given("^I click on next button of the Users Page$")
+	public void i_click_on_next_button_of_the_Users_Page(){
+		
+		Elements.click(UsersPage.nextPage);
+		
+	}
+
+	@Given("^I click on last button of the Users Page$")
+	public void i_click_on_last_button_of_the_Users_Page(){
+		
+		Elements.click(UsersPage.lastPage);
+		
+	}
+
+
 
 }
