@@ -1,6 +1,38 @@
 Feature: Projects of the Portal
+
+		Scenario: Verify Add Projects
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on Add Project
+    And I enter the Customer "Diatoz"
+    And I enter the Project "DataLake"
+    And I enter the Folder "Data"
+    And I enter the Project end date "20/05/2023"
+    And I select the Project Confidentiality
+    And I save the new Project 
+    
+    Scenario: Verify Project Members
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on Projects member
+    And I click on Project member management
+    And I click on save Project member
+    
+    Scenario: Verify Edit Project
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on ellipsis
+    And I click on Edit 
+    And I edit confidentiality
+    And I save edited project
 	
-	 	Scenario: Verify whether Searched Projects appear on the screen
+	  Scenario: Verify whether Searched Projects appear on the screen
     Given I launch the application
     And I enter the UserID "preeti.sajjan@diatoz.com" 
     And I enter the Password "hello123"
@@ -38,3 +70,19 @@ Feature: Projects of the Portal
     And I click on This Month
     And I click on the Apply Filter of EndDate
     And I click on Reset Page of EndDate
+    
+    Scenario: Verify navigating to the next page of Projects
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on next button of the Projects Page
+    
+    Scenario: Verify navigating to the last page of Projects
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on last button of the Projects Page   
+    
+    

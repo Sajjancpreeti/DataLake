@@ -112,5 +112,122 @@ public class Projects {
 		Elements.click(ProjectsPage.resetPage);
 		
 	}
+	
+	@And("^I click on next button of the Projects Page$")
+	public void i_click_on_next_button_of_the_Projects_Page(){
+		
+		Elements.click(ProjectsPage.nextProject);
+		
+	}
+
+	@And("^I click on last button of the Projects Page$")
+	public void i_click_on_last_button_of_the_Projects_Page(){
+		
+		Elements.click(ProjectsPage.lastProject);
+		
+	}
+	
+	@And("^I click on Add Project$")
+	public void i_click_on_Add_Project(){
+		
+		Elements.click(ProjectsPage.addProject);
+		
+	}
+
+	@And("^I enter the Customer \"([^\"]*)\"$")
+	public void i_enter_the_Customer(String arg1){
+		
+		Elements.TypeText(ProjectsPage.customer, arg1);
+		
+	}
+
+	@And("^I enter the Project \"([^\"]*)\"$")
+	public void i_enter_the_Project(String arg1){
+		
+		Elements.TypeText(ProjectsPage.projectName, arg1);
+		
+	}
+	
+	@And("^I enter the Folder \"([^\"]*)\"$")
+	public void i_enter_the_Folder(String arg1){
+		
+		Elements.TypeText(ProjectsPage.folderName, arg1);
+		
+	}
+
+	@And("^I enter the Project end date \"([^\"]*)\"$")
+	public void i_enter_the_Project_end_date(String arg1) throws InterruptedException{
+		
+		Elements.click(ProjectsPage.endDateTab);
+		
+		//Elements.TypeText(ProjectsPage.endDateTab, arg1);	
+		Elements.typeRandomNumber(ProjectsPage.endDateTab, 30/03/2023);
+		
+		
+	}
+
+	@And("^I select the Project Confidentiality$")
+	public void i_select_the_Project_Confidentiality(){
+		
+		Elements.click(ProjectsPage.confidential);
+		
+	}
+
+	@And("^I save the new Project$")
+	public void i_save_the_new_Project(){
+		
+		Elements.click(ProjectsPage.saveProject);
+		
+	}
+	
+	@And("^I click on Projects member$")
+	public void i_click_on_Projects_member(){
+		
+		Elements.click(ProjectsPage.projectMembers);
+		
+	}
+
+	@And("^I click on Project member management$")
+	public void i_click_on_Project_member_management(){
+		
+		Elements.click(ProjectsPage.projectMembersManage);
+		
+	}
+
+	@And("^I click on save Project member$")
+	public void i_click_on_save_Project_member(){
+		
+		Elements.click(ProjectsPage.saveProjectMembers);
+		
+	}
+	
+	@And("^I click on ellipsis$")
+	public void i_click_on_ellipsis(){
+		
+		Elements.click(ProjectsPage.elipsis);
+		
+	}
+
+	@And("^I click on Edit$")
+	public void i_click_on_Edit(){
+		
+		Elements.click(ProjectsPage.editButton);
+		
+	}
+
+	@And("^I edit confidentiality$")
+	public void i_edit_confidentiality(){
+		
+		Elements.click(ProjectsPage.nonConfidential);
+		
+	}
+
+	@And("^I save edited project$")
+	public void i_save_edited_project(){
+		
+		Elements.click(ProjectsPage.saveEdit);
+		
+	}
+
 
 }

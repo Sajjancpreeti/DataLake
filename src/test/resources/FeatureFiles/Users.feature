@@ -77,7 +77,7 @@ Feature: Users of the portal
     And I click on Enabled to disable user
     And I click on Disabled to enable user
     
-    Scenario: Verify Status of user
+    Scenario: Verify Assign Project of user
     Given I launch the application
     And I enter the UserID "preeti.sajjan@diatoz.com" 
     And I enter the Password "hello123"
