@@ -50,8 +50,11 @@ public class UsersPage {
 	@FindBy(xpath = "//div[@class='bg-white text-secondary modal-body']//div[2]//input[1]")
 	public static WebElement selectInternal;
 	
-	@FindBy(xpath = "//input[@id='certisUserId']")
+	@FindBy(xpath = "//input[@id='userId']")
 	public static WebElement certisID;
+	
+	@FindBy(xpath = "//input[@id='userId']")
+	public static WebElement cretisEmail;
 	
 	@FindBy(xpath = "//button[@aria-label='Next']")
 	public static WebElement nextPage;
@@ -59,7 +62,7 @@ public class UsersPage {
 	@FindBy(xpath = "//button[@aria-label='Last']")
 	public static WebElement lastPage;
 	
-	@FindBy(xpath = "//tr[@id='preetisajjan2@gmail.com']//a[@class='p-0 shadow-none btn btn-white btn-sm']//*[name()='svg']//*[name()='path' and contains(@fill,'currentCol')]")
+	@FindBy(xpath = "//tr[@id='preetisajjan2@gmail.com']//a[@class='p-0 shadow-none btn btn-white btn-sm']//*[name()='svg']")
 	public static WebElement editUserButton;
 	
 	@FindBy(xpath = "//input[@id='last-name']")
@@ -88,5 +91,7 @@ public class UsersPage {
 	
 	@FindBy(xpath = "//span[normalize-space()='Save']")
 	public static WebElement saveAssign;
+	
+	
 	
 }

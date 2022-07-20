@@ -38,7 +38,10 @@ public class UserProfilePage {
 	@FindBy(xpath = "//input[@id='confirmPassword']")
 	public static WebElement confirmPassword;
 	
-	@FindBy(xpath = "//span[contains(.,'Save')]")
+	@FindBy(xpath = "//span[normalize-space()='Save']")
 	public static WebElement savePassword;
+	
+	@FindBy(xpath = "//a[@data-cy='logout']")
+	public static WebElement signOut;
 
 }

@@ -46,7 +46,8 @@ Feature: Users of the portal
     And I click on Users
     And I click on Create User
     And I select Internal User
-    And I enter Certis User ID "SG000000"
+    And I enter Certis User ID "SG000002"
+    And I enter Certis email "user@certisgroup.com"
     And I click on Add User
     
     Scenario: Verify edit user
@@ -56,7 +57,7 @@ Feature: Users of the portal
     And I click on Next
     And I click on Users
     And I click on Edit button of User
-    And I edit the Last name of User "Koti"
+    And I edit the Last name of User "ZZZ"
     And I save the edited user changes
     
     Scenario: Verify Delete user

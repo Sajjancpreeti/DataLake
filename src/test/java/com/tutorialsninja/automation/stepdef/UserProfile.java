@@ -69,7 +69,14 @@ public class UserProfile {
 	@And("^I click on save password$")
 	public void i_click_on_save_password(){
 		
-		Elements.TypeText(UserProfilePage.savePassword, null);
+		Elements.click(UserProfilePage.savePassword);
+		
+	}
+	
+	@And("^I click on Sign Out$")
+	public void i_click_on_Sign_Out(){
+		
+		Elements.click(UserProfilePage.signOut);
 		
 	}
 

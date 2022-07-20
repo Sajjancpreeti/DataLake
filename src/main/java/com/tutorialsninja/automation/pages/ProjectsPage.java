@@ -47,8 +47,8 @@ public class ProjectsPage {
 	@FindBy(xpath = "//th[5]//*[name()='svg'][2]/*[name()='path'][1]")
 	public static WebElement enddateFilter;
 	
-	@FindBy(xpath = "//span[normalize-space()='This Month']")
-	public static WebElement thisMonth;
+	@FindBy(xpath = "//span[normalize-space()='Tomorrow']")
+	public static WebElement tomorrow;
 	
 	@FindBy(xpath = "//span[contains(text(),'›')]")
 	public static WebElement nextProject;
@@ -97,5 +97,23 @@ public class ProjectsPage {
 	
 	@FindBy(xpath = "//span[normalize-space()='Save Project']")
 	public static WebElement saveEdit;
+	
+	@FindBy(xpath = "//tbody/tr[2]/td[7]/div[1]/a[2]/span[1]")
+	public static WebElement upload;
+	
+	@FindBy(xpath = "//span[contains(text(),'Browse Files')]")
+	public static WebElement browseFile;
+	
+	@FindBy(xpath = "//span[@class='checkmark']")
+	public static WebElement checkMark;
+	
+	@FindBy(xpath = "//button[normalize-space()='Continue']")
+	public static WebElement continueButton;
+	
+	@FindBy(xpath = "//button[@aria-label='Upload 1 file']")
+	public static WebElement uploadFile;
+	
+	@FindBy(xpath = "//input[@class='uppy-FileInput-input']")
+	public static WebElement upload1;
 	 
 }

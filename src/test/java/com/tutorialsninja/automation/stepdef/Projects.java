@@ -13,7 +13,7 @@ public class Projects {
 	public void i_Click_on_Search_Tab(){
 		
 		Elements.click(ProjectsPage.searchTab);
-		
+				
 	}
 
 	@And("^I enter the Project Name as \"([^\"]*)\"$")
@@ -95,7 +95,7 @@ public class Projects {
 	@And("^I click on This Month$")
 	public void i_click_on_This_Month(){
 		
-		Elements.click(ProjectsPage.thisMonth);
+		Elements.click(ProjectsPage.tomorrow);
 		
 	}
 
@@ -160,10 +160,12 @@ public class Projects {
 		
 		Elements.click(ProjectsPage.endDateTab);
 		
-		//Elements.TypeText(ProjectsPage.endDateTab, arg1);	
-		Elements.typeRandomNumber(ProjectsPage.endDateTab, 30/03/2023);
-		
-		
+		Elements.TypeText(ProjectsPage.endDateTab, arg1);	
+		//Elements.typeRandomNumber(ProjectsPage.endDateTab, 30/03/2023);
+		/*WebElement n = ProjectsPage.endDateTab;
+		Select sel = new Select(n);
+		sel.selectByVisibleText("23");*/
+			
 	}
 
 	@And("^I select the Project Confidentiality$")
@@ -174,9 +176,10 @@ public class Projects {
 	}
 
 	@And("^I save the new Project$")
-	public void i_save_the_new_Project(){
+	public void i_save_the_new_Project() throws InterruptedException{
 		
 		Elements.click(ProjectsPage.saveProject);
+		Thread.sleep(7000);
 		
 	}
 	
@@ -227,6 +230,53 @@ public class Projects {
 		
 		Elements.click(ProjectsPage.saveEdit);
 		
+	}
+	
+	@And("^I click on Upload$")
+	public void i_click_on_Upload(){
+		
+		Elements.click(ProjectsPage.upload);
+		
+	}
+
+	@And("^I click on Browse Files$")
+	public void i_click_on_Browse_Files(){
+		
+		Elements.click(ProjectsPage.browseFile);
+		
+	}
+
+	@And("^I agree for Tearms and Conditions$")
+	public void i_agree_for_Tearms_and_Conditions(){
+		
+		Elements.click(ProjectsPage.checkMark);
+		
+	}
+
+	@And("^I click on Continue$")
+	public void i_click_on_Continue() throws InterruptedException{
+		
+		//Elements.click(ProjectsPage.continueButton);
+		//Thread.sleep(5000);
+		//System.out.println("Uploaded");
+		//ProjectsPage.upload1.sendKeys("C:\\Users\\preeti.sajjan\\Desktop\\LCF\\download1.jpg");
+		//Elements.click(ProjectsPage.continueButton);
+		Thread.sleep(3000);
+	
+	}
+
+	@And("^I upload files from the path$")
+	public void i_upload_files_from_the_path(){
+		
+		//Elements.click(ProjectsPage.continueButton);
+		
+	}
+
+	@And("^I click on Upload file$")
+	public void i_click_on_Upload_file() throws InterruptedException{
+		
+		//Elements.click(ProjectsPage.uploadFile);
+		//Thread.sleep(5000);
 	}
 
 

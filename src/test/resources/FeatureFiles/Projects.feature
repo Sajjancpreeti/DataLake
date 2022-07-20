@@ -1,5 +1,17 @@
 Feature: Projects of the Portal
 
+		Scenario: Verify uploading files to the Project
+    Given I launch the application
+    And I enter the UserID "preeti.sajjan@diatoz.com" 
+    And I enter the Password "hello123"
+    And I click on Next
+    And I click on Upload
+    And I click on Browse Files
+    And I agree for Tearms and Conditions
+    And I click on Continue
+    And I upload files from the path
+    And I click on Upload file 
+
 		Scenario: Verify Add Projects
     Given I launch the application
     And I enter the UserID "preeti.sajjan@diatoz.com" 
@@ -9,7 +21,7 @@ Feature: Projects of the Portal
     And I enter the Customer "Diatoz"
     And I enter the Project "DataLake"
     And I enter the Folder "Data"
-    And I enter the Project end date "20/05/2023"
+    And I enter the Project end date "20052023"
     And I select the Project Confidentiality
     And I save the new Project 
     
@@ -40,6 +52,8 @@ Feature: Projects of the Portal
     And I Click on Search Tab
     And I enter the Project Name as "Mercury"
     
+    
+        
 		Scenario: Verify the sorting of Projects
     Given I launch the application
     And I enter the UserID "preeti.sajjan@diatoz.com" 
